@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .card:hover{
     padding: 10px;
@@ -26,4 +27,35 @@
 .flecha a{
     text-decoration: none;
     text-decoration: none;
+}
+.contact-main{
+    background: linear-gradient(110deg,rgb(156, 240, 156), rgb(7, 46, 6),rgb(156, 240, 156) );
+    height: 450px;
+    background-size: contain;
+    /* background-image: url(./img/bg-blackBlue.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat; */
+    width: 100%;
+}
+form{
+    border: 5px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1em;
+    font-size: large;
+
+}
+.validador{
+    display: none;
+}
+.table{
+    font-size: small;
+    width: 75%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagen{
+    width: 90%;
 }
