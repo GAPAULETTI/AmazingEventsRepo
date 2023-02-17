@@ -30,12 +30,11 @@
 }
 .contact-main{
     background: linear-gradient(110deg,rgb(156, 240, 156), rgb(7, 46, 6),rgb(156, 240, 156) );
-    height: 450px;
-    background-size: contain;
+    background-size: cover;
     /* background-image: url(./img/bg-blackBlue.jpg);
     object-fit: contain;
     background-repeat: no-repeat; */
-    width: 100%;
+    
 }
 form{
     border: 5px;
@@ -45,6 +44,12 @@ form{
     padding: 1em;
     font-size: large;
 
+}
+.form-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em ;
 }
 .validador{
     display: none;
@@ -58,4 +63,13 @@ form{
 }
 .imagen{
     width: 90%;
+   /*  object-fit: ver; */
+
+}
+main{
+   
+    min-height: 100vh;
+} 
+footer{
+    max-width: 99%;
 }
