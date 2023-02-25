@@ -23,11 +23,13 @@
     text-decoration: none;
     background-color: black;
     margin: 0;
+
 }
 .flecha a{
     text-decoration: none;
-    text-decoration: none;
+  
 }
+
 .contact-main{
     background: linear-gradient(110deg,rgb(156, 240, 156), rgb(7, 46, 6),rgb(156, 240, 156) );
     background-size: cover;
@@ -71,5 +73,5 @@ main{
     min-height: 100vh;
 } 
 footer{
-    max-width: 99%;
+    max-width: 100%;
 }

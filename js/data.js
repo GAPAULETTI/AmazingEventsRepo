@@ -22,7 +22,7 @@ let data = {
         "category":"Food Fair",
         "place":"Room A",
         "capacity":45000,
-        "assistance":42756,
+        "estimate":42756,
         "price":10
       },
       {
@@ -80,8 +80,8 @@ let data = {
         "date":"2022-01-22",
         "description":"The only concert of the most emblematic band in the world.",
         "category":"Music Concert",
-        "place":"Room A"
-        ,"capacity":138000,
+        "place":"Room A",
+        "capacity":138000,
         "estimate":138000,
         "price":150
       },
@@ -118,7 +118,7 @@ let data = {
         "category":"Race",
         "place":"New York",
         "capacity":3000000,
-        "assistance":2569800,
+        "estimate":2569800,
         "price":3
         },
       {
@@ -171,3 +171,8 @@ let data = {
       }
     ]
   }
+
+  for (let events of data){
+    
+  }
+
