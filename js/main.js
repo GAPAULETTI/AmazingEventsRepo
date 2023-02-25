@@ -2,6 +2,10 @@ const events = data.events;
 console.log();
 
 let arrCards = [];
+let pastEvents = [];
+let upcomingEvents = [];
+let fechaAct = data.currentDate;
+
 
 
 function cardEvents(){
@@ -30,6 +34,9 @@ function printEvents(){
     let card = document.getElementById('card-template');
     card.innerHTML=arrCards.join('');
 };
+
+
+
 
 cardEvents();
 printEvents();

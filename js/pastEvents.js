@@ -1,7 +1,7 @@
 const events = data.events;
 console.log();
 
-let arrCards = [];
+let pastEvents = [];
 let fechaAct = data.currentDate;
 
 
@@ -25,14 +25,14 @@ function cardEvents(){
         </div>
       </div>
         `
-        arrCards.push(cards);
+        pastEvents.push(cards);
     }
     }
 }
 
 function printEvents(){
     let card = document.getElementById('card-template');
-    card.innerHTML=arrCards.join('');
+    card.innerHTML=pastEvents.join('');
 };
 
 cardEvents();
