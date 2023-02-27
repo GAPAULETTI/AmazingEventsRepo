@@ -1,9 +1,7 @@
 const events = data.events;
-console.log();
 
 let arrCards = [];
-let pastEvents = [];
-let upcomingEvents = [];
+
 let fechaAct = data.currentDate;
 
 

@@ -37,7 +37,7 @@ function cardEvents(){
                     <td data-th="Capacity">${evento.capacity}</td>
                     <td data-th="Date">5<sup>th</sup>${evento.date}</td>
                     <td data-th="Assistance">${evento.estimate}</td>
-                    <td data-th="Price">${evento.price}</td>
+                    <td data-th="Price"> $ ${evento.price}</td>
                     </tr>
                     </table>
                 </div>
