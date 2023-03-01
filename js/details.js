@@ -1,25 +1,32 @@
-const events = data.events;
-console.log();
-
-let arrCards = [];
 
 
-function cardEvents(){
+const queryString = location.search;
+
+const params = new URLSearchParams(queryString)
+
+const id = params.get(id)
+
+const cardEvento = data.find(evento => evento.id === id)
+
+
+//document.getElementById('card-template').innerHTML = events.find( evento => evento._id === 1);
+
+/* function cardEvents(){ */
     
-    /* let card = document.getElementById('card-template'); */
-    for(let evento of events){
-        let cards =
+/* for(let evento of events){ */
+       const card = document.getElementById('card-template')
+       card.innerHTML=
         `
-            <div class="card mb-3 ms-auto me-auto mt-4 col" style="max-width: 540px;" id="card-template">
+            <div class="card mb-3 ms-auto me-auto mt-4 col" style="max-width: 540px;" >
                 <div class="row g-0">
                 <div class="col-md-6">
-                    <img src="${evento.image}" class="img-fluid rounded-start" alt="...">
+                    <img src="${cardEvento.image}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body">
-                    <h5 class="card-title">${evento.name}</h5>
-                    <p class="card-text"><small class="text-muted">${evento.category}</small></p>
-                    <p class="card-text">${evento.description}</p>
+                    <h5 class="card-title">${cardEvento.name}</h5>
+                    <p class="card-text"><small class="text-muted">${cardEvento.category}</small></p>
+                    <p class="card-text">${cardEvento.description}</p>
                     </div>
                 </div>
                 </div>
@@ -33,11 +40,11 @@ function cardEvents(){
                     <th>Price</th>
                     </tr>
                     <tr>
-                    <td data-th="Place">${evento.place}</td>
-                    <td data-th="Capacity">${evento.capacity}</td>
-                    <td data-th="Date">5<sup>th</sup>${evento.date}</td>
-                    <td data-th="Assistance">${evento.estimate}</td>
-                    <td data-th="Price"> $ ${evento.price}</td>
+                    <td data-th="Place">${cardEvento.place}</td>
+                    <td data-th="Capacity">${cardEvento.capacity}</td>
+                    <td data-th="Date">5<sup>th</sup>${cardEvento.date}</td>
+                    <td data-th="Assistance">${cardEvento.estimate}</td>
+                    <td data-th="Price"> $ ${cardEvento.price}</td>
                     </tr>
                     </table>
                 </div>
@@ -47,14 +54,12 @@ function cardEvents(){
                 </div>
             </div>
         `
-        arrCards.push(cards);
-    }
-}
+   
 
-function printEvents(){
+/* function printEvents(){
     let card = document.getElementById('card-template');
-    card.innerHTML=arrCards.join('');
-};
+    card.innerHTML=cardDetail.join('');
+}; */
 
-cardEvents();
-printEvents();
+/* cardEvents();
+printEvents(); */
