@@ -4,29 +4,29 @@ const queryString = location.search;
 
 const params = new URLSearchParams(queryString)
 
-const id = params.get(id)
+const id = params.get("id")
 
-const cardEvento = data.find(evento => evento.id === id)
+const cardEvento = data.events.filter(evento => evento.id == id)
 
-
+console.log(cardEvento)
 //document.getElementById('card-template').innerHTML = events.find( evento => evento._id === 1);
 
 /* function cardEvents(){ */
     
 /* for(let evento of events){ */
-       const card = document.getElementById('card-template')
+       const card = document.getElementById('card-detail')
        card.innerHTML=
         `
             <div class="card mb-3 ms-auto me-auto mt-4 col" style="max-width: 540px;" >
                 <div class="row g-0">
                 <div class="col-md-6">
-                    <img src="${cardEvento.image}" class="img-fluid rounded-start" alt="...">
+                    <img src="${cardEvento[0].image}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body">
-                    <h5 class="card-title">${cardEvento.name}</h5>
-                    <p class="card-text"><small class="text-muted">${cardEvento.category}</small></p>
-                    <p class="card-text">${cardEvento.description}</p>
+                    <h5 class="card-title">${cardEvento[0].name}</h5>
+                    <p class="card-text"><small class="text-muted">${cardEvento[0].category}</small></p>
+                    <p class="card-text">${cardEvento[0].description}</p>
                     </div>
                 </div>
                 </div>
@@ -35,16 +35,16 @@ const cardEvento = data.find(evento => evento.id === id)
                     <tr>
                     <th>Place</th>
                     <th>Capacity</th>
-                    <th>Date</th>
+                    <th>Date</th>   
                     <th>Assistance</th>
                     <th>Price</th>
                     </tr>
                     <tr>
-                    <td data-th="Place">${cardEvento.place}</td>
-                    <td data-th="Capacity">${cardEvento.capacity}</td>
-                    <td data-th="Date">5<sup>th</sup>${cardEvento.date}</td>
-                    <td data-th="Assistance">${cardEvento.estimate}</td>
-                    <td data-th="Price"> $ ${cardEvento.price}</td>
+                    <td data-th="Place">${cardEvento[0].place}</td>
+                    <td data-th="Capacity">${cardEvento[0].capacity}</td>
+                    <td data-th="Date">5<sup>th</sup>${cardEvento[0].date}</td>
+                    <td data-th="Assistance">${cardEvento[0].estimate}</td>
+                    <td data-th="Price"> $ ${cardEvento[0].price}</td>
                     </tr>
                     </table>
                 </div>
@@ -54,7 +54,7 @@ const cardEvento = data.find(evento => evento.id === id)
                 </div>
             </div>
         `
-   
+   console.log(card)
 
 /* function printEvents(){
     let card = document.getElementById('card-template');
