@@ -4,8 +4,6 @@ let arrCards = [];
 
 let fechaAct = data.currentDate;
 
-
-
 function cardEvents(){
     
     /* let card = document.getElementById('card-template'); */
