@@ -146,7 +146,7 @@ let data = {
         "price":100
       },
       {
-        _id: 13,
+        id: 13,
         "image":"https://i.postimg.cc/vH52y81C/cinema4.jpg",
         "name":"Batman",
         "date":"2021-3-11",

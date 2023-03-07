@@ -1,5 +1,3 @@
-
-
 const queryString = location.search;
 
 const params = new URLSearchParams(queryString)
@@ -14,7 +12,7 @@ console.log(cardEvento)
 /* function cardEvents(){ */
     
 /* for(let evento of events){ */
-       const card = document.getElementById('card-detail')
+       const card = document.getElementById('card_detail')
        card.innerHTML=
         `
             <div class="card mb-3 ms-auto me-auto mt-4 col" style="max-width: 540px;" >
