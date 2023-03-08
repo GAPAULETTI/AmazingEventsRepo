@@ -1,13 +1,5 @@
 let evento = data.events
 let fechaAct = data.currentDate
-/* let arrUp = []
-console.log(fechaAct)
-for(let evento of data.events){
- if(fechaAct < evento.date){
-  arrUp.push(evento.name)
- }
-} */
-
 
 function cardsUpcomingTemplate(evento) {
   

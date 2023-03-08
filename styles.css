@@ -89,3 +89,18 @@ footer{
     max-width: 100%;
 }
 
+.search-var{
+    background-color: rgb(140, 148, 150);
+    border-radius: 1em;
+
+}
+.check_cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.contact-input{
+    display: flex;
+    justify-content: end;
+
+}

@@ -1,35 +1,50 @@
-/* const dataForm = document.querySelector('dataForm') */
 
-/* dataForm.addEventListener("submit", formData) */
+ function formContact(){
+    let data = {
+    firstName : document.getElementById("firstName").value,
+    lastName : document.getElementById("lastName").value,
+    email : document.getElementById("email").value,
+    message : document.getElementById("message").value
+    }
+    console.log(data)
+    alert(`
+            Name= ${data.firstName}
+            Last Name= ${data.lastName}
+            Email= ${data.email}
+            Message= ${data.message}
+    `)
+}  
+       
+const handleForm = (event) => {
+    event.preventDefault()
+    formContact()
+}
 
-let btnSubmit = document.getElementById('submit-btn')
-
-btnSubmit.addEventListener(
+let formSubmit = document.getElementById('form-submit')
+formSubmit.addEventListener(
     'click',
-    handleForm,
-   
+    handleForm
 )
 
-function handleForm(event){
+    
+
+
+
+
+
+/* function captureData(event){
     event.preventDefault()
-    captureData()
+    dataForm = {
+        firstName : event.target
     }
+   
+} 
+console.log(captureData())
 
-function captureData(event){
-   let datos = document.getElementById("dataform")
-          /*  console.log(firstName.value)
-        console.log(lastName.value)
-        console.log(email.value)
-        console.log(message.value) */
-    let data=[
-        firstName.value,
-        lastName.value,
-        email.value,
-        message.value
-    ]
-    return data
-    }
-    console.log(captureData())
-
+formContact.addEventListener('submit', (e)=>{
+e.preventDefault()
+captureData()
+})
+ */
 
     

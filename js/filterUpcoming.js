@@ -6,10 +6,9 @@ function captureData(){
     })
     if(filtro.length > 0){
         printUpcomingEvents('#cardUpcomingTemplate',filtro)
-     /* } else {
-       alert("Evento no existe") */
+     } else {
+        notFoundCard()
      }    
-     
     }
 
     const handleForm = (event) =>{
