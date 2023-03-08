@@ -23,5 +23,5 @@ function checkCategory(form_check, arrCat ){
 }
 
 
-console.log(checkCategory('#cardTemplate', categories))
-checkCategory('#cardTemplate', categories)
+
+checkCategory('#checkTemplate', categories)

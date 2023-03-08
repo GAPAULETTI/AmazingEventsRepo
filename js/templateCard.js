@@ -20,5 +20,5 @@ function printCard(cardTemplate, arrCards){
     arrCards = arrCards.map(cardTemplates)
     card.innerHTML = arrCards.join('')
 }
-printCard('#cardTemplate', evento)
+printCard('#checkTemplate', evento)
 
