@@ -1,18 +1,18 @@
-const events = data.events;
-console.log();
+let evento = data.events
+let fechaAct = data.currentDate
+/* let arrUp = []
+console.log(fechaAct)
+for(let evento of data.events){
+ if(fechaAct < evento.date){
+  arrUp.push(evento.name)
+ }
+} */
 
-let upcomingEvents = [];
-let fechaAct = data.currentDate;
 
-
-
-function cardEvents(){
-    
-    /* let card = document.getElementById('card-template'); */
-    for(let evento of events){
-        if(fechaAct < evento.date ){
-        let cards =
-        `
+function cardsUpcomingTemplate(evento) {
+  
+    if(fechaAct < evento.date ){
+  return`
         <div class="card m-3" style="width: 18rem;">
         <img src="${evento.image}" class="card-img-top" style="height: 12rem;" alt="evento">
         <div class="card-body">
@@ -24,16 +24,14 @@ function cardEvents(){
           </div>
         </div>
       </div>
-        `
-        upcomingEvents.push(cards);
+      `
     }
-    }
-}
-
-function printEvents(){
-    let card = document.getElementById('card-template');
-    card.innerHTML=upcomingEvents.join('');
-};
-
-cardEvents();
-printEvents();
+  }
+        
+   function printUpcomingEvents(cardUpcomingTemplate, arrUpcoming){
+    let card = document.querySelector(cardUpcomingTemplate)
+    arrUpcoming = arrUpcoming.map(cardsUpcomingTemplate)
+    card.innerHTML= arrUpcoming.join('')
+  }
+ 
+printUpcomingEvents('#cardUpcomingTemplate',evento)

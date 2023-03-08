@@ -31,9 +31,9 @@ function cardEvents(){
 }
 
 function printEvents(){
-    let card = document.getElementById('card-template');
-    card.innerHTML=pastEvents.join('');
-};
+    let card = document.getElementById('card-template')
+    card.innerHTML=pastEvents.join('')
+}
 
 cardEvents();
 printEvents();
