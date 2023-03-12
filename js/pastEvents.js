@@ -12,7 +12,7 @@ function cardsPastTemplate(evento) {
           <p class="card-text">${evento.description}</p>
           <div class="row">
             <p class="col">u$s ${evento.price}</p>
-            <a href="./detail.html" class="btn btn-primary col">Detail</a>
+            <a href="./detail.html?id=${evento.id}" class="btn btn-primary col">Detail</a>
           </div>
         </div>
       </div>

@@ -17,11 +17,11 @@ function cardTemplates(evento){
   </div> 
     `
   }
+  function printCard(cardTemplate, arrCards){
+      let card = document.querySelector(cardTemplate)
+      arrCards = arrCards.map(cardTemplates)
+      card.innerHTML = arrCards.join('')
+  }
 
-function printCard(cardTemplate, arrCards){
-    let card = document.querySelector(cardTemplate)
-    arrCards = arrCards.map(cardTemplates)
-    card.innerHTML = arrCards.join('')
-}
 printCard('#cardTemplate', evento)
 

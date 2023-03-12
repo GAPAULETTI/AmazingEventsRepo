@@ -26,7 +26,7 @@ let data = {
         "price":10
       },
       {
-        id: 3,
+       id: 3,
         "image":"https://i.postimg.cc/GmHRkbNV/Jurassic-Park.jpg",
         "name":"Jurassic Park",
         "date":"2021-11-02",
@@ -74,7 +74,7 @@ let data = {
         "price":12
       },
       {
-        id: 7,
+       id: 7,
         "image":"https://i.postimg.cc/PrMJ0ZMc/Metallica-in-concert.jpg",
         "name":"Metallica in concert",
         "date":"2022-01-22",
