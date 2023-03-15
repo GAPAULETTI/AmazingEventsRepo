@@ -13,9 +13,7 @@ async function apiDetailEvents(){
         const id = params.get("id")
 
         const responseDetail = response.events.find(each => each.id == id)
-
-        console.log(response.currentDate)      
-
+ 
         if( response.currentDate > responseDetail.date){   
             card.innerHTML =
                      `<div class="card mb-3 ms-auto me-auto mt-4 col" style="max-width: 540px;" >
