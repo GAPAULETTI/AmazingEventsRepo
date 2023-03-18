@@ -24,6 +24,7 @@ function cardsPastTemplate(arrayPast) {
     arrPastEvents = arrPastEvents.map(cardsPastTemplate)
     card.innerHTML = arrPastEvents.join('')
   }
+  let arrayEvent;
  async function apiCardEvents(){
     try{
         let urlApi = 'https://mindhub-ab35.onrender.com/api/amazing-events'
@@ -37,9 +38,9 @@ function cardsPastTemplate(arrayPast) {
             arrayPast.push(ev)
              }
           }
-         
+         arrayEvent = [...arrayPast]
         printPastEvents('#cardPastTemplate', arrayPast)
-       /*  printChecks(response.events) */
+        printChecks(arrayPast)
         
 
     }catch(error){
