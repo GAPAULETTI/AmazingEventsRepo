@@ -1,9 +1,14 @@
-let categories = []
-data.events.forEach(each =>{
-    if( ! categories.includes(each.category)){
-        categories.push(each.category)
-    }
-})
+function printChecks(data){
+    let categories = []
+    data.forEach(each =>{
+        if( ! categories.includes(each.category)){
+            categories.push(each.category)
+        }
+    })
+
+    checkCategory('#checkTemplate', categories)
+}
+
 /* console.log(categories) */
 
 
@@ -23,5 +28,3 @@ function checkCategory(form_check, arrCat ){
     arrCat.push(`<input onkeyup="captureData()" class="contact-input d-flex justify-content-end" type="text" name="texto" id="id_search" placeholder="search">`)
     container.innerHTML = arrCat.join('')
 }
-
-checkCategory('#checkTemplate', categories)

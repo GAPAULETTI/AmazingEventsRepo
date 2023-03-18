@@ -24,13 +24,19 @@ function printCard(cardTemplate, arrCards){
    arrCards = arrCards.map(cardTemplates)
    card.innerHTML = arrCards.join('')
 }
+
+let arrayEvent;
+
 async function apiCardEvents(){
     try{
         let urlApi = 'https://mindhub-ab35.onrender.com/api/amazing-events'
         let fetchResponse = await fetch(urlApi)
         let response = await fetchResponse.json()
-
+        arrayEvent = [...response.events]
+      
         printCard('#cardTemplate', response.events)
+        printChecks(response.events)
+        
 
     }catch(error){
        /* console.log("error")  */
